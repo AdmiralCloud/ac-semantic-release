@@ -1,3 +1,13 @@
+<a name="0.1.1"></a>
+
+## [0.1.1](https://github.com/mmpro/ac-semantic-release/compare/v0.1.0..v0.1.1) (2020-03-29 12:51:49)
+
+
+### Bug Fix
+
+* **App:** Use git tag instead of git describe to get latest tag | MP | [bda1ff48504d62b3b08b3381c06de04a678525a5](https://github.com/mmpro/ac-semantic-release/commit/bda1ff48504d62b3b08b3381c06de04a678525a5)    
+Use git tag instead of git describe to get latest tag  
+Related issues: [mmpro/ac-semantic-release#1](https://github.com/mmpro/ac-semantic-release/issues/1) [mmpro/ac-api-server#340](https://github.com/mmpro/ac-api-server/issues/340)
 <a name="0.1.0"></a>
  
 # [0.1.0](https://github.com/mmpro/ac-semantic-release/compare/..v0.1.0) (2020-03-28 21:56:31)
