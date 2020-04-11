@@ -1,3 +1,12 @@
+<a name="0.1.2"></a>
+
+## [0.1.2](https://github.com/mmpro/ac-semantic-release/compare/v0.1.1..v0.1.2) (2020-04-11 09:30:51)
+
+
+### Bug Fix
+
+* **App:** If no tags present, use version 0.0.0 | MP | [a4dee92afe36e5119bda5417c6abb05b0a4babf1](https://github.com/mmpro/ac-semantic-release/commit/a4dee92afe36e5119bda5417c6abb05b0a4babf1)    
+If no tags present, use version 0.0.0
 <a name="0.1.1"></a>
 
 ## [0.1.1](https://github.com/mmpro/ac-semantic-release/compare/v0.1.0..v0.1.1) (2020-03-29 12:51:49)
