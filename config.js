@@ -5,6 +5,7 @@ const exec = util.promisify(require('child_process').exec);
 
 
 const config = {
+  selectedType: undefined,
   templates: {
     templateEntry: __dirname + '/templates/templateEntry.ejs',
     templateSection: __dirname + '/templates/templateSection.ejs',
@@ -16,6 +17,7 @@ const config = {
     {value: 'fix',      name: 'fix:      A bug fix', changelog: 'Bug Fix', order: 10 },
     {value: 'feat',     name: 'feat:     A new feature', changelog: 'Feature', order: 1 },
     {value: 'chore',    name: 'chore:    Changes to the build process or auxiliary tools\n            and libraries such as documentation generation', changelog: 'Chores', order: 92},
+    {value: 'package',  name: 'package:  Package update', changelog: 'Chores', order: 92},
     {value: 'test',     name: 'test:     Adding missing tests', changelog: 'Tests', order: 80 },
     {value: 'docs',     name: 'docs:     Documentation only changes', changelog: 'Documentation', order: 90},
     {value: 'style',    name: 'style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)', changelog: 'Style', order: 91},
@@ -53,6 +55,9 @@ const config = {
             value: _.get(item, 'name')
           }
         })
+      },
+      when: (val) => {
+        config.selectedType = val.type
       }
     },
     {
@@ -64,7 +69,8 @@ const config = {
         return 'Please add a title with more than 5 characters'
       },
       default: () => {
-        if (process.env.NODE_ENV === 'test') return 'My commit title'
+        if (config.selectedType === 'package') return 'Updated packages'
+        else if (process.env.NODE_ENV === 'test') return 'My commit title'
       }
     },
     {
@@ -76,7 +82,8 @@ const config = {
         return 'Please add a significant description'
       },
       default: () => {
-        if (process.env.NODE_ENV === 'test') return 'My commit description'
+        if (config.selectedType === 'package') return 'Updated packages'
+        else if (process.env.NODE_ENV === 'test') return 'My commit description'
       }
     },
     {
