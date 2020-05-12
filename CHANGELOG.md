@@ -1,3 +1,12 @@
+<a name="0.1.4"></a>
+
+## [0.1.4](https://github.com/mmpro/ac-semantic-release/compare/v0.1.3..v0.1.4) (2020-05-12 08:49:31)
+
+
+### Bug Fix
+
+* **App:** Make sure to add section to questions | MP | [abce13380c939d324c709743f7e3f5affb4161ce](https://github.com/mmpro/ac-semantic-release/commit/abce13380c939d324c709743f7e3f5affb4161ce)    
+Make sure to add section to questions
 <a name="0.1.3"></a>
 
 ## [0.1.3](https://github.com/mmpro/ac-semantic-release/compare/v0.1.2..v0.1.3) (2020-05-12 08:45:51)
