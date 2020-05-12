@@ -58,6 +58,7 @@ const config = {
       },
       when: (val) => {
         config.selectedType = val.type
+        return true
       }
     },
     {
