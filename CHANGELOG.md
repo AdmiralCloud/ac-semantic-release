@@ -1,3 +1,12 @@
+<a name="0.1.3"></a>
+
+## [0.1.3](https://github.com/mmpro/ac-semantic-release/compare/v0.1.2..v0.1.3) (2020-05-12 08:45:51)
+
+
+### Bug Fix
+
+* **undefined:** New selection for package update | MP | [dc2b82ebcde9bbc8b28a3516745c628606024524](https://github.com/mmpro/ac-semantic-release/commit/dc2b82ebcde9bbc8b28a3516745c628606024524)    
+If you update packages, no need to write long messages, just select type package and choose the default message for title and description.
 <a name="0.1.2"></a>
 
 ## [0.1.2](https://github.com/mmpro/ac-semantic-release/compare/v0.1.1..v0.1.2) (2020-04-11 09:30:51)
