@@ -1,3 +1,15 @@
+<a name="0.2.1"></a>
+
+## [0.2.1](https://github.com/mmpro/ac-semantic-release/compare/v0.2.0..v0.2.1) (2020-06-14 07:37:19)
+
+
+### Bug Fix
+
+* **App:** regex include whitespace | MD | [bdcd7139f169941569d2391eb2b1f79519b209e8](https://github.com/mmpro/ac-semantic-release/commit/bdcd7139f169941569d2391eb2b1f79519b209e8)    
+Merge: 236c922 8ed531f  
+Merge pull request #1 from mmpro/develop_md
+* **App:** regex include whitespace | MD | [8ed531f199c225e8bd5eb8663161d6ddc4b9f719](https://github.com/mmpro/ac-semantic-release/commit/8ed531f199c225e8bd5eb8663161d6ddc4b9f719)    
+allow any character in commit section title regex
 <a name="0.2.0"></a>
  
 # [0.2.0](https://github.com/mmpro/ac-semantic-release/compare/v0.1.4..v0.2.0) (2020-06-14 07:36:47)
