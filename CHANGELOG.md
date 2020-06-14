@@ -1,3 +1,16 @@
+<a name="0.2.0"></a>
+ 
+# [0.2.0](https://github.com/mmpro/ac-semantic-release/compare/v0.1.4..v0.2.0) (2020-06-14 07:36:47)
+
+
+### Feature
+
+* **App:** Add support for JIRA issues | MP | [eed5a8a25d5fd5fa9e8a0dc35173d52808a51b20](https://github.com/mmpro/ac-semantic-release/commit/eed5a8a25d5fd5fa9e8a0dc35173d52808a51b20)    
+You can now link to Jira issues using square brackets (e.g. [JRA-123])
+### Chores
+
+* **App:** Updated packages | MP | [276767973d04d42b086e989a3a959d9e7b9ecac4](https://github.com/mmpro/ac-semantic-release/commit/276767973d04d42b086e989a3a959d9e7b9ecac4)    
+Updated packages
 <a name="0.1.4"></a>
 
 ## [0.1.4](https://github.com/mmpro/ac-semantic-release/compare/v0.1.3..v0.1.4) (2020-05-12 08:49:31)
