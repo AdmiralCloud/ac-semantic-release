@@ -51,6 +51,9 @@ module.exports = {
   repository: {
     url: 'https://github.com/ACCOUNT/REPO'
   },
+  jira: {
+    url: 'https://MY-INSTANCE.atlassian.net' // This is optional
+  }
   changelogFile: __dirname + '/CHANGELOG.md',
   scopes: [
     {name: 'Misc' },

@@ -90,7 +90,7 @@ const config = {
     {
       type: 'input',
       name: 'links',
-      message: 'List any ISSUES RELATED to this change (optional). E.g.: #31, admiralcloud/otherpackage#34 - will be added to body',
+      message: 'List any ISSUES from Github (starting with #) or Jira (as [issue]) RELATED to this change (optional). E.g.: #31, admiralcloud/otherpackage#34, [JRA-123] - will be added to body',
       default: () => {
         if (process.env.NODE_ENV === 'test') return '#1, mmpro/ac-api-server#340'
       }
