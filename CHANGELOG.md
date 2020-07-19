@@ -1,3 +1,16 @@
+<a name="0.2.2"></a>
+
+## [0.2.2](https://github.com/mmpro/ac-semantic-release/compare/v0.2.1..v0.2.2) (2020-07-19 07:25:10)
+
+
+### Bug Fix
+
+* **App:** Improved handling for Jira issues | MP | [5d6079d0d7f660ba3e9d2ee16cac8afd7d65c83d](https://github.com/mmpro/ac-semantic-release/commit/5d6079d0d7f660ba3e9d2ee16cac8afd7d65c83d)    
+Put Jira issue ID at start of commit message
+### Chores
+
+* **App:** Updated packages | MP | [ae85d9f83197a0205b14df8a1a7e1067275c3efc](https://github.com/mmpro/ac-semantic-release/commit/ae85d9f83197a0205b14df8a1a7e1067275c3efc)    
+Updated packages
 <a name="0.2.1"></a>
 
 ## [0.2.1](https://github.com/mmpro/ac-semantic-release/compare/v0.2.0..v0.2.1) (2020-06-14 07:37:19)

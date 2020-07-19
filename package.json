@@ -1,6 +1,6 @@
 {
   "name": "ac-semantic-release",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Lightweight semantic release management",
   "main": "index.js",
   "author": "Mark Poepping",
