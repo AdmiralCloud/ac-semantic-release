@@ -1,3 +1,16 @@
+<a name="0.2.3"></a>
+
+## [0.2.3](https://github.com/mmpro/ac-semantic-release/compare/v0.2.2..v0.2.3) (2020-09-22 13:12:32)
+
+
+### Bug Fix
+
+* **App:** Allow strings before fix/feature keyword | MP | [aa012639b8e4186def4569fef1aea447825ae0c8](https://github.com/mmpro/ac-semantic-release/commit/aa012639b8e4186def4569fef1aea447825ae0c8)    
+In order to connect with JIRA, the title must start with the appropriate identifier [JRA-123] followed by the keyword (fix or feature).
+### Chores
+
+* **App:** Updated packages | MP | [14146a1ee644f16e6d16427bbd010d4ac9e4db45](https://github.com/mmpro/ac-semantic-release/commit/14146a1ee644f16e6d16427bbd010d4ac9e4db45)    
+Updated packages
 <a name="0.2.2"></a>
 
 ## [0.2.2](https://github.com/mmpro/ac-semantic-release/compare/v0.2.1..v0.2.2) (2020-07-19 07:25:10)
