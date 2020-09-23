@@ -1,3 +1,12 @@
+<a name="0.2.4"></a>
+
+## [0.2.4](https://github.com/mmpro/ac-semantic-release/compare/v0.2.3..v0.2.4) (2020-09-23 16:16:18)
+
+
+### Bug Fix
+
+* **App:** Fixed regex to determine title | MP | [428f19d378c00a85076b53ce531464413855840d](https://github.com/mmpro/ac-semantic-release/commit/428f19d378c00a85076b53ce531464413855840d)    
+Title can start with [JRA-123]
 <a name="0.2.3"></a>
 
 ## [0.2.3](https://github.com/mmpro/ac-semantic-release/compare/v0.2.2..v0.2.3) (2020-09-22 13:12:32)
