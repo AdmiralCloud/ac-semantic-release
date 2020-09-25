@@ -1,3 +1,12 @@
+<a name="0.2.5"></a>
+
+## [0.2.5](https://github.com/mmpro/ac-semantic-release/compare/v0.2.4..v0.2.5) (2020-09-25 11:54:43)
+
+
+### Bug Fix
+
+* **App:** Fixed detecting title | MP | [305abbde51445355d699e9482888915a32c246ba](https://github.com/mmpro/ac-semantic-release/commit/305abbde51445355d699e9482888915a32c246ba)    
+Fixed detecting title of commit
 <a name="0.2.4"></a>
 
 ## [0.2.4](https://github.com/mmpro/ac-semantic-release/compare/v0.2.3..v0.2.4) (2020-09-23 16:16:18)
