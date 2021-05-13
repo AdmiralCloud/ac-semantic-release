@@ -1,3 +1,12 @@
+<a name="0.2.6"></a>
+
+## [0.2.6](https://github.com/mmpro/ac-semantic-release/compare/v0.2.5..v0.2.6) (2021-05-13 06:13:13)
+
+
+### Bug Fix
+
+* **App:** Package updates | MP | [a9de1a833bdeb328f0562e260ca89532d097257a](https://github.com/mmpro/ac-semantic-release/commit/a9de1a833bdeb328f0562e260ca89532d097257a)    
+Package updates
 <a name="0.2.5"></a>
 
 ## [0.2.5](https://github.com/mmpro/ac-semantic-release/compare/v0.2.4..v0.2.5) (2020-09-25 11:54:43)
