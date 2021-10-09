@@ -1,6 +1,6 @@
 module.exports = {
   repository: {
-    url: 'https://github.com/mmpro/ac-semantic-release'
+    url: 'https://github.com/admiralcloud/ac-semantic-release'
   },
   changelogFile: __dirname + '/CHANGELOG.md',
   scopes: [
