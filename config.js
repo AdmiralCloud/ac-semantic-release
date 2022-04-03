@@ -92,7 +92,7 @@ const config = {
       name: 'links',
       message: 'List any ISSUES from Github (starting with #) or Jira (as [issue]) RELATED to this change (optional). E.g.: #31, admiralcloud/otherpackage#34, [JRA-123] - will be added to body',
       default: async () => {
-        if (process.env.NODE_ENV === 'test') return '#1, mmpro/ac-api-server#340'
+        if (process.env.NODE_ENV === 'test') return '#1, admiralcloud/ac-api-server#340'
         try {
           const { stdout } = await exec('git rev-parse --abbrev-ref HEAD')
           return `[${_.trim(stdout)}]`
