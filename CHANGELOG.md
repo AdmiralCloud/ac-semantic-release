@@ -1,3 +1,20 @@
+<a name="0.3.0"></a>
+ 
+# [0.3.0](https://github.com/admiralcloud/ac-semantic-release/compare/v0.2.7..v0.3.0) (2022-04-03 06:19:53)
+
+
+### Feature
+
+* **App:** Default option for link issue to Jira based on current bra… | [ff97d30a4e267d93de48e8f3c0bb134877852cf7](https://github.com/admiralcloud/ac-semantic-release/commit/ff97d30a4e267d93de48e8f3c0bb134877852cf7)    
+Merge: d937e0f 1f5d896  
+Merge pull request #4 from AdmiralCloud/default-branch
+* **App:** Default option for link issue to Jira based on current branch | VD | [1f5d896840568f4953b7d3dbd66ebc414010c4b0](https://github.com/admiralcloud/ac-semantic-release/commit/1f5d896840568f4953b7d3dbd66ebc414010c4b0)    
+Quality of life improvement - gives default option for choosing link to Jira based on current Git branch
+### Chores
+
+* **App:** Updated packages | MP | [22d06782afbb478598bb7f3c7474cd8ed8d896ea](https://github.com/admiralcloud/ac-semantic-release/commit/22d06782afbb478598bb7f3c7474cd8ed8d896ea)    
+Updated packages  
+Related issues: [undefined/undefined#master](undefined/browse/master)
 <a name="0.2.7"></a>
 
 ## [0.2.7](https://github.com/admiralcloud/ac-semantic-release/compare/v0.2.6..v0.2.7) (2021-10-09 10:28:05)
