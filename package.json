@@ -4,7 +4,10 @@
   "version": "0.3.0",
   "description": "Lightweight semantic release management",
   "main": "index.js",
-  "author": "Mark Poepping",
+  "author": "Mark Poepping (https://www.admiralcloud.com)",
+  "contributors": [
+    "Virginijus Digrys (https://www.admiralcloud.com"
+  ],
   "license": "MIT",
   "dependencies": {
     "async": "^3.2.3",

@@ -74,4 +74,4 @@ We have been using semantic-release package for a long time but created our own 
 
 ## License
 
-[MIT License](https://opensource.org/licenses/MIT) Copyright © 2009-present, AdmiralCloud, Mark Poepping
+[MIT License](https://opensource.org/licenses/MIT) Copyright © 2009-present, AdmiralCloud AG, Mark Poepping
