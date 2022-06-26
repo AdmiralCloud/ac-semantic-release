@@ -1,3 +1,26 @@
+<a name="0.3.1"></a>
+
+## [0.3.1](https://github.com/admiralcloud/ac-semantic-release/compare/v0.3.0..v0.3.1) (2022-06-26 08:06:25)
+
+
+### Bug Fix
+
+* **App:** Fixed debugmode for release | MP | [38475e34f5efae6f74e986df665887115ee75e92](https://github.com/admiralcloud/ac-semantic-release/commit/38475e34f5efae6f74e986df665887115ee75e92)    
+Use debugmode to preview your release without changing anything  
+Related issues: [/issues#undefined](https://github.com//issues/undefined)
+### Documentation
+
+* **App:** Minor doc updates | MP | [0bc78b9a866f3e4d5e9ba55ba321ef72a14d4916](https://github.com/admiralcloud/ac-semantic-release/commit/0bc78b9a866f3e4d5e9ba55ba321ef72a14d4916)    
+Minor doc updates  
+Related issues: [undefined/undefined#master](undefined/browse/master)
+### Chores
+
+* **App:** Updated gitignore file | MP | [00239fe3e9c45f81910d249c41b0592a987efb09](https://github.com/admiralcloud/ac-semantic-release/commit/00239fe3e9c45f81910d249c41b0592a987efb09)    
+Updated gitignore file  
+Related issues: [undefined/undefined#master](undefined/browse/master)
+* **App:** Replace mmpro with AdmiralCloud | MP | [3ba2db35f4182facd8542508f64306831e994da2](https://github.com/admiralcloud/ac-semantic-release/commit/3ba2db35f4182facd8542508f64306831e994da2)    
+Replace mmpro with AdmiralCloud  
+Related issues: [undefined/undefined#master](undefined/browse/master)
 <a name="0.3.0"></a>
  
 # [0.3.0](https://github.com/admiralcloud/ac-semantic-release/compare/v0.2.7..v0.3.0) (2022-04-03 06:19:53)
