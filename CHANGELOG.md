@@ -1,3 +1,26 @@
+<a name="0.3.2"></a>
+
+## [0.3.2](https://github.com/admiralcloud/ac-semantic-release/compare/v0.3.1..v0.3.2) (2022-06-26 09:19:40)
+
+
+### Bug Fix
+
+* **App:** Use only merge conflicts, not commits with merge in start of body | MP | [233cdc5a658819a5f96733357fdcfca3a4671a33](https://github.com/admiralcloud/ac-semantic-release/commit/233cdc5a658819a5f96733357fdcfca3a4671a33)    
+Use only merge conflicts, not commits with merge in start of body  
+Related issues: [/issues#undefined](https://github.com//issues/undefined)
+* **App:** Do not consider merge commits for release. | MP | [c45676fdc8c2fa97d960529e8d0b5d6ed4df9339](https://github.com/admiralcloud/ac-semantic-release/commit/c45676fdc8c2fa97d960529e8d0b5d6ed4df9339)    
+Merge commit are not used to determine version. They are not added to changelog or release notes.  
+Related issues: [/issues#undefined](https://github.com//issues/undefined)
+### Chores
+
+* **App:** Add test-release to Makefile | MP | [dc8d07026e145112c925cca127119621c7b473aa](https://github.com/admiralcloud/ac-semantic-release/commit/dc8d07026e145112c925cca127119621c7b473aa)    
+Add test-release to MakefileAdd test-release to Makefile  
+Related issues: [/issues#undefined](https://github.com//issues/undefined)
+### Chores
+
+* **App:** Updated packages | MP | [32dca0fc28e58925827959605786f745d78c163c](https://github.com/admiralcloud/ac-semantic-release/commit/32dca0fc28e58925827959605786f745d78c163c)    
+Updated packages  
+Related issues: [/issues#undefined](https://github.com//issues/undefined)
 <a name="0.3.1"></a>
 
 ## [0.3.1](https://github.com/admiralcloud/ac-semantic-release/compare/v0.3.0..v0.3.1) (2022-06-26 08:06:25)
