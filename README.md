@@ -18,7 +18,7 @@ commit:
 	@node ./node_modules/ac-semantic-release/lib/commit.js
 
 release:
-	@node ./node_modules/ac-semantic-release/lib/release.js	--branch master
+	@node ./node_modules/ac-semantic-release/lib/release.js
 ```
 
 ## Committing
@@ -39,6 +39,13 @@ This process will
 + commit the changelog and the package.json
 + create the new tag
 + push the commit and the tag
+
+***PRO TIP***   
+You can check what the release would look like using environment variable DEBUGMODE:
+```
+export DEBUGMODE=true
+@node ./node_modules/ac-semantic-release/lib/release.js
+```
 
 
 ## Customizing
