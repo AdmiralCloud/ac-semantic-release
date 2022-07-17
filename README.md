@@ -19,6 +19,9 @@ commit:
 
 release:
 	@node ./node_modules/ac-semantic-release/lib/release.js
+
+test-release:
+	DEBUGMODE=true node ./node_modules/ac-semantic-release/lib/release.js  
 ```
 
 ## Committing
@@ -40,13 +43,15 @@ This process will
 + create the new tag
 + push the commit and the tag
 
-***PRO TIP***   
+***PRO TIP No 1***   
 You can check what the release would look like using environment variable DEBUGMODE:
 ```
 export DEBUGMODE=true
 @node ./node_modules/ac-semantic-release/lib/release.js
 ```
 
+***PRO TIP No 2***
+In case commit messags turn out to be incorrect, you might want to use a fixed version (instead of auto semantic versioning). Now this module supports that function by exporting a fixed version, e.g. export FIXEDVERSION=1.0.0.
 
 ## Customizing
 It is highly recommended that you create a configuration file in your actual repository. Please name it ".acsemver.js" and make sure it is also part of your source control (in other words: commit it!)
