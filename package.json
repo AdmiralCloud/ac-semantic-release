@@ -1,7 +1,7 @@
 {
   "name": "ac-semantic-release",
   "repository": "admiralcloud/ac-semantic-release",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "description": "Lightweight semantic release management",
   "main": "index.js",
   "author": "Mark Poepping (https://www.admiralcloud.com)",
@@ -10,6 +10,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "async": "^3.2.4",
     "chalk": "4.1.2",
     "inquirer": "8.2.5",
     "lodash": "^4.17.21"

@@ -1,3 +1,18 @@
+<a name="0.4.0"></a>
+ 
+# [0.4.0](https://github.com/admiralcloud/ac-semantic-release/compare/v0.3.5..v0.4.0) (2023-04-05 15:22:28)
+
+
+### Feature
+
+* **App:** You cannot select files directly in commit call | MP | [50844c8b41f9aeabcdcc0a64cda4b649dbb5a103](https://github.com/admiralcloud/ac-semantic-release/commit/50844c8b41f9aeabcdcc0a64cda4b649dbb5a103)    
+No need to use git-add before commit.  
+Related issues: [undefined/undefined#master](undefined/browse/master)
+### Chores
+
+* **App:** Updated packages | MP | [1e2cce59eade3cd8ea0cf9946900cd883c6f5e4e](https://github.com/admiralcloud/ac-semantic-release/commit/1e2cce59eade3cd8ea0cf9946900cd883c6f5e4e)    
+Updated packages  
+Related issues: [undefined/undefined#master](undefined/browse/master)
 <a name="0.3.5"></a>
 
 ## [0.3.5](https://github.com/admiralcloud/ac-semantic-release/compare/v0.3.4..v0.3.5) (2023-02-02 19:07:47)
