@@ -16,7 +16,7 @@ let config = {
     "new-cap": 0
   },
   'parserOptions': {
-    'ecmaVersion': 2018
+    'ecmaVersion': 2022
   }
 }
 module.exports = config
