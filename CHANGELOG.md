@@ -1,3 +1,17 @@
+<a name="0.4.1"></a>
+
+## [0.4.1](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.0..v0.4.1) (2023-04-20 16:38:34)
+
+
+### Bug Fix
+
+* **App:** Fix double quotes issues in commit messages | VD | [e4af1c0968b838f19b4a08f88aca3bcde53a9ece](https://github.com/admiralcloud/ac-semantic-release/commit/e4af1c0968b838f19b4a08f88aca3bcde53a9ece)    
+Fix double quotes issues in commit messages  
+Related issues: [undefined/undefined#AC-4198](undefined/browse/AC-4198)
+### Chores
+
+* **Misc:** Updated packages | VD | [d7d8fe1a3fcdf0fdc7536a0489f2627db3b1d147](https://github.com/admiralcloud/ac-semantic-release/commit/d7d8fe1a3fcdf0fdc7536a0489f2627db3b1d147)    
+Updated packages
 <a name="0.4.0"></a>
  
 # [0.4.0](https://github.com/admiralcloud/ac-semantic-release/compare/v0.3.5..v0.4.0) (2023-04-05 15:22:28)
