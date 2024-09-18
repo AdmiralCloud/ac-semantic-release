@@ -14,17 +14,17 @@ const config = {
   },
   changelogFile: 'path-to-changelog',
   types: [
-    {value: 'fix',      name: 'fix:      A bug fix', changelog: 'Bug Fix', order: 10 },
-    {value: 'feat',     name: 'feat:     A new feature', changelog: 'Feature', order: 1 },
-    {value: 'chore',    name: 'chore:    Changes to the build process or auxiliary tools\n            and libraries such as documentation generation', changelog: 'Chores', order: 92},
-    {value: 'package',  name: 'package:  Package update', changelog: 'Chores', order: 92},
-    {value: 'test',     name: 'test:     Adding missing tests', changelog: 'Tests', order: 80 },
-    {value: 'docs',     name: 'docs:     Documentation only changes', changelog: 'Documentation', order: 90},
-    {value: 'style',    name: 'style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)', changelog: 'Style', order: 91},
-    {value: 'refactor', name: 'refactor: A code change that neither fixes a bug nor adds a feature', changelog: 'Refactor', order: 60 },
-    {value: 'perf',     name: 'perf:     A code change that improves performance', changelog: 'Performance', order: 51},
-    {value: 'revert',   name: 'revert:   Revert to a commit', changelog: 'Revert', order: 20},
-    {value: 'WIP',      name: 'WIP:      Work in progress'}
+    { value: 'fix',      name: 'fix:      A bug fix', changelog: 'Bug Fix', order: 10 },
+    { value: 'feat',     name: 'feat:     A new feature', changelog: 'Feature', order: 1 },
+    { value: 'chore',    name: 'chore:    Changes to the build process or auxiliary tools\n            and libraries such as documentation generation', changelog: 'Chores', order: 92 },
+    { value: 'package',  name: 'package:  Package update', changelog: 'Chores', order: 92 },
+    { value: 'test',     name: 'test:     Adding missing tests', changelog: 'Tests', order: 80 },
+    { value: 'docs',     name: 'docs:     Documentation only changes', changelog: 'Documentation', order: 90 },
+    { value: 'style',    name: 'style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)', changelog: 'Style', order: 91 },
+    { value: 'refactor', name: 'refactor: A code change that neither fixes a bug nor adds a feature', changelog: 'Refactor', order: 60 },
+    { value: 'perf',     name: 'perf:     A code change that improves performance', changelog: 'Performance', order: 51 },
+    { value: 'revert',   name: 'revert:   Revert to a commit', changelog: 'Revert', order: 20 },
+    { value: 'WIP',      name: 'WIP:      Work in progress' }
   ],
   sections: [
     { name: 'App' },
@@ -91,7 +91,7 @@ const config = {
       type: 'input',
       name: 'links',
       message: 'List any ISSUES from Github (starting with #) or Jira (as [issue]) RELATED to this change (optional). E.g.: #31, admiralcloud/otherpackage#34, [JRA-123] - will be added to body',
-      default: async () => {
+      default: async() => {
         if (process.env.NODE_ENV === 'test') return '#1, admiralcloud/ac-api-server#340'
         try {
           const { stdout } = await exec('git rev-parse --abbrev-ref HEAD')
