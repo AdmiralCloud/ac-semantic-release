@@ -1,3 +1,18 @@
+<a name="0.4.3"></a>
+
+## [0.4.3](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.2..v0.4.3) (2024-09-20 13:01:40)
+
+
+### Bug Fix
+
+* **App:** fix escaping double quotes and backslash in commit title and body | VD | [d16d5da8681c72486096f192b072184785da15fb](https://github.com/admiralcloud/ac-semantic-release/commit/d16d5da8681c72486096f192b072184785da15fb)    
+fix escaping double quotes and backslash in commit title and body  
+Related issues: [undefined/undefined#AC-6189](undefined/browse/AC-6189)
+### Chores
+
+* **Misc:** Updated packages, eslinted | VD | [1d23eaf1d96e235f301c6ae3c86528d32e930e37](https://github.com/admiralcloud/ac-semantic-release/commit/1d23eaf1d96e235f301c6ae3c86528d32e930e37)    
+Updated packages, eslinted  
+Related issues: [undefined/undefined#AC-6189](undefined/browse/AC-6189)
 <a name="0.4.2"></a>
 
 ## [0.4.2](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.1..v0.4.2) (2023-07-16 06:11:30)
