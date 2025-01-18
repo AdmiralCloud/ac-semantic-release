@@ -1,6 +1,8 @@
 # AC Semantic Release
 AdmiralCloud Semantic Release Manager makes sure your commits and release follow semantic versioning guidelines.
 
+[![Node.js CI](https://github.com/AdmiralCloud/ac-semantic-release/actions/workflows/node.js.yaml/badge.svg)](https://github.com/AdmiralCloud/ac-semantic-release/actions/workflows/node.js.yaml)
+
 ## Why use this package
 First of all, it is always a good idea to use semantic versioning for your repositories and make the process as easy as possible for all your developers and contributors.
 
