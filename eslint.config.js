@@ -1,4 +1,5 @@
-const globals = require('globals');
+const globals = require('globals')
+const js = require('@eslint/js')
 
 module.exports = {
   languageOptions: {
@@ -10,18 +11,23 @@ module.exports = {
       ...globals.node,
       expect: 'readonly',
       describe: 'readonly',
-      it: 'readonly'
+      it: 'readonly',
+      test: 'readonly'
     }
   },
   rules: {
-    'no-const-assign': 'error', // Ensure this rule is enabled
+    ...js.configs.recommended.rules,
+    'no-undef': 'error',  // Add this rule to catch undefined variables
+    'no-const-assign': 'error',
+    'space-before-function-paren': 'off',
     'no-extra-semi': 'off',
     'object-curly-spacing': ['error', 'always'],
     'brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
     'no-useless-escape': 'off',
-    'standard/no-callback-literal': 'off',
     'new-cap': 'off',
-    'space-before-function-paren': ["error", { "anonymous": "never", "named": "never", "asyncArrow": "never" }]
-    //'no-console': ['warn', { allow: ['warn', 'error'] }]
+    //'no-console': ['warn', { allow: ['warn', 'error'] }],
+    'no-unused-vars': 'error',
+    'prefer-const': ['warn', { ignoreReadBeforeAssign: true }],
+    "no-control-regex": "off"
   }
 };

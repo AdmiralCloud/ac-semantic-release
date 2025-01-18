@@ -97,7 +97,7 @@ const config = {
           const { stdout } = await exec('git rev-parse --abbrev-ref HEAD')
           return `[${_.trim(stdout)}]`
         }
-        catch (err) {
+        catch {
           // eat error
         }
       }
@@ -117,8 +117,8 @@ const config = {
       },
       default: async() => {
         const { stdout } = await exec('git config user.name')
-        let parts = _.split(stdout, ' ')
-        let initials = _.first(parts).substr(0, 1) + _.last(parts).substr(0, 1)
+        const parts = _.split(stdout, ' ')
+        const initials = _.first(parts).substring(0, 1) + _.last(parts).substring(0, 1)
         return initials
       }
     }
