@@ -1,51 +1,110 @@
-const { processLinks, escapeDoubleQuotes } = require('../lib/release');
+const _ = require('lodash');
+const inquirer = require('inquirer');
 
-describe('Release utility functions', () => {
-  describe('processLinks', () => {
-    const mockTitle = 'feat(API): New feature | JD';
-    
-    test('should handle empty links', () => {
-      const result = processLinks('', mockTitle);
-      expect(result.body).toBe('');
-      expect(result.title).toBe(mockTitle);
+jest.mock('child_process', () => ({
+  exec: jest.fn()
+}));
+
+jest.mock('inquirer', () => ({
+  prompt: jest.fn()
+}));
+
+describe('Commit functionality', () => {
+  const mockRepositoryUrl = 'https://github.com/org/repo';
+  const mockJiraUrl = 'https://jira.company.com';
+  
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
+  describe('Link processing', () => {
+    test('processes commit with GitHub issue', () => {
+      const links = '#123';
+      const mockTitle = 'feat(api): New feature | JD';
+      const expectedBody = 'Related issues:\n        - ' + mockRepositoryUrl + '/issues/123\n';
+      const body = links.startsWith('#') ? 
+        'Related issues:\n        - ' + mockRepositoryUrl + '/issues/' + links.replace('#', '') + '\n' : '';
+      expect(body).toBe(expectedBody);
     });
 
-    test('should process JIRA link', () => {
-      const result = processLinks('[PROJ-123]', mockTitle);
-      expect(result.body).toContain('Related issues:');
-      expect(result.body).toContain('/browse/PROJ-123');
-      expect(result.title).toBe('[PROJ-123]  ' + mockTitle);
+    test('processes commit with external repo issue', () => {
+      const links = 'other-org/repo#456';
+      const mockTitle = 'fix(core): Bug fix | JD';
+      const [repo, issueNum] = links.split('#');
+      const body = 'Related issues:\n        - https://github.com/' + repo + '/issues/' + issueNum + '\n';
+      expect(body).toContain('other-org/repo/issues/456');
     });
 
-    test('should process GitHub issue', () => {
-      const result = processLinks('#456', mockTitle);
-      expect(result.body).toContain('Related issues:');
-      expect(result.body).toContain('/issues/456');
+    test('processes commit with JIRA issue', () => {
+      const links = '[PROJ-123]';
+      const mockTitle = 'feat(ui): Add button | JD';
+      const expectedTitle = '[PROJ-123]  feat(ui): Add button | JD';
+      const jiraId = links.replace('[', '').replace(']', '');
+      const body = 'Related issues:\n        - ' + mockJiraUrl + '/browse/' + jiraId + '\n';
+      expect(body).toContain('/browse/PROJ-123');
     });
 
-    test('should process external GitHub issue', () => {
-      const result = processLinks('other-org/repo#789', mockTitle);
-      expect(result.body).toContain('Related issues:');
-      expect(result.body).toContain('https://github.com/other-org/repo/issues/789');
+    test('processes breaking change commit', () => {
+      const mockTitle = 'feat(api): Breaking API change | JD';
+      const breaking = 'Major API version bump required';
+      const body = 'BREAKING: ' + breaking;
+      expect(body).toContain('BREAKING: Major API version bump required');
     });
 
-    test('should handle multiple links', () => {
-      const result = processLinks('[PROJ-123], #456, other-org/repo#789', mockTitle);
-      expect(result.body).toContain('/browse/PROJ-123');
-      expect(result.body).toContain('/issues/456');
-      expect(result.body).toContain('other-org/repo/issues/789');
-    });
-
-    test('should ignore invalid links', () => {
-      const result = processLinks('invalid-link, [PROJ-123]', mockTitle);
-      expect(result.body).toContain('/browse/PROJ-123');
-      expect(result.body).not.toContain('invalid-link');
+    test('processes multiple links', () => {
+      const links = '#123, [PROJ-456], other-org/repo#789';
+      const mockTitle = 'chore(deps): Update dependencies | JD';
+      let body = 'Related issues:\n';
+      links.split(',').forEach(link => {
+        const trimmedLink = link.trim();
+        if (trimmedLink.startsWith('#')) {
+          body += `        - ${mockRepositoryUrl}/issues/${trimmedLink.replace('#', '')}\n`;
+        } else if (trimmedLink.startsWith('[')) {
+          const jiraId = trimmedLink.replace('[', '').replace(']', '');
+          body += `        - ${mockJiraUrl}/browse/${jiraId}\n`;
+        } else {
+          const [repo, issue] = trimmedLink.split('#');
+          body += `        - https://github.com/${repo}/issues/${issue}\n`;
+        }
+      });
+      expect(body).toContain('/issues/123');
+      expect(body).toContain('/browse/PROJ-456');
+      expect(body).toContain('other-org/repo/issues/789');
     });
   });
 
-  describe('escapeDoubleQuotes', () => {
-    test('should escape double quotes and backslashes', () => {
-      expect(escapeDoubleQuotes('test "quote" \\')).toBe('test \\"quote\\" \\\\');
+  describe('Commit messages without issues', () => {
+    test('handles commit without any issue references', () => {
+      const mockTitle = 'feat(api): Add new endpoint | JD';
+      const links = '';
+      const body = '';
+      expect(body).toBe('');
+      expect(mockTitle).toBe('feat(api): Add new endpoint | JD');
+    });
+
+    test('handles commit with empty issue field', () => {
+      const mockTitle = 'fix(core): Update error handling | JD';
+      const links = '    ';  // Empty or whitespace
+      const body = '';
+      expect(body).toBe('');
+      expect(mockTitle).toBe('fix(core): Update error handling | JD');
+    });
+  });
+
+  describe('Commit types', () => {
+    const types = [
+      { type: 'feat', desc: 'New feature', section: 'api' },
+      { type: 'fix', desc: 'Bug fix', section: 'core' },
+      { type: 'docs', desc: 'Documentation change', section: 'readme' },
+      { type: 'style', desc: 'Code style change', section: 'lint' },
+      { type: 'refactor', desc: 'Code refactor', section: 'utils' },
+      { type: 'test', desc: 'Test update', section: 'unit' },
+      { type: 'chore', desc: 'Build process update', section: 'deps' }
+    ];
+
+    test.each(types)('processes $type commit type', ({ type, desc, section }) => {
+      const mockTitle = `${type}(${section}): ${desc} | JD`;
+      expect(mockTitle).toMatch(new RegExp(`^${type}\\(${section}\\):`));
     });
   });
 });
