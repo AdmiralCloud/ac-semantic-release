@@ -50,7 +50,6 @@ Related issues:
 * **App:** Updated packages | MP | [3a05009bb4160785ea5f0a9b68da89c2e7098e9a](https://github.com/admiralcloud/ac-semantic-release/commit/3a05009bb4160785ea5f0a9b68da89c2e7098e9a)    
 Updated packages  
 Related issues:
-<a name="0.4.3"></a>
 
 ## [0.4.3](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.2..v0.4.3) (2024-09-20 13:01:40)
 
@@ -65,7 +64,6 @@ Related issues: [undefined/undefined#AC-6189](undefined/browse/AC-6189)
 * **Misc:** Updated packages, eslinted | VD | [1d23eaf1d96e235f301c6ae3c86528d32e930e37](https://github.com/admiralcloud/ac-semantic-release/commit/1d23eaf1d96e235f301c6ae3c86528d32e930e37)    
 Updated packages, eslinted  
 Related issues: [undefined/undefined#AC-6189](undefined/browse/AC-6189)
-<a name="0.4.2"></a>
 
 ## [0.4.2](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.1..v0.4.2) (2023-07-16 06:11:30)
 
@@ -75,7 +73,6 @@ Related issues: [undefined/undefined#AC-6189](undefined/browse/AC-6189)
 * **App:** Package updates | MP | [f89889e0c87c6951abc837b0db68ad8cb92ae7f3](https://github.com/admiralcloud/ac-semantic-release/commit/f89889e0c87c6951abc837b0db68ad8cb92ae7f3)    
 Package updates  
 Related issues: [undefined/undefined#master](undefined/browse/master)
-<a name="0.4.1"></a>
 
 ## [0.4.1](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.0..v0.4.1) (2023-04-20 16:38:34)
 
@@ -89,8 +86,7 @@ Related issues: [undefined/undefined#AC-4198](undefined/browse/AC-4198)
 
 * **Misc:** Updated packages | VD | [d7d8fe1a3fcdf0fdc7536a0489f2627db3b1d147](https://github.com/admiralcloud/ac-semantic-release/commit/d7d8fe1a3fcdf0fdc7536a0489f2627db3b1d147)    
 Updated packages
-<a name="0.4.0"></a>
- 
+
 # [0.4.0](https://github.com/admiralcloud/ac-semantic-release/compare/v0.3.5..v0.4.0) (2023-04-05 15:22:28)
 
 
@@ -104,7 +100,6 @@ Related issues: [undefined/undefined#master](undefined/browse/master)
 * **App:** Updated packages | MP | [1e2cce59eade3cd8ea0cf9946900cd883c6f5e4e](https://github.com/admiralcloud/ac-semantic-release/commit/1e2cce59eade3cd8ea0cf9946900cd883c6f5e4e)    
 Updated packages  
 Related issues: [undefined/undefined#master](undefined/browse/master)
-<a name="0.3.5"></a>
 
 ## [0.3.5](https://github.com/admiralcloud/ac-semantic-release/compare/v0.3.4..v0.3.5) (2023-02-02 19:07:47)
 
@@ -114,7 +109,6 @@ Related issues: [undefined/undefined#master](undefined/browse/master)
 * **App:** Package updates | MP | [59fc103188cec90a55bbde78efe640ea1693d305](https://github.com/admiralcloud/ac-semantic-release/commit/59fc103188cec90a55bbde78efe640ea1693d305)    
 Package updates  
 Related issues: [undefined/undefined#master](undefined/browse/master)
-<a name="0.3.4"></a>
 
 ## [0.3.4](https://github.com/admiralcloud/ac-semantic-release/compare/v0.3.3..v0.3.4) (2022-09-17 14:58:54)
 
@@ -124,7 +118,6 @@ Related issues: [undefined/undefined#master](undefined/browse/master)
 * **App:** Package updates | MP | [54f77c2035584dd9319081ac2bd0fa57d6c31776](https://github.com/admiralcloud/ac-semantic-release/commit/54f77c2035584dd9319081ac2bd0fa57d6c31776)    
 Package updates  
 Related issues: [/issues#undefined](https://github.com//issues/undefined)
-<a name="0.3.3"></a>
 
 ## [0.3.3](https://github.com/admiralcloud/ac-semantic-release/compare/v0.3.2..v0.3.3) (2022-07-17 15:50:38)
 
@@ -139,7 +132,6 @@ Related issues: [undefined/undefined#master](undefined/browse/master)
 * **App:** Updated packages | MP | [1b36f1d6b05cac0e9e76d9384c1cd6fa343553df](https://github.com/admiralcloud/ac-semantic-release/commit/1b36f1d6b05cac0e9e76d9384c1cd6fa343553df)    
 Updated packages  
 Related issues: [undefined/undefined#master](undefined/browse/master)
-<a name="0.3.2"></a>
 
 ## [0.3.2](https://github.com/admiralcloud/ac-semantic-release/compare/v0.3.1..v0.3.2) (2022-06-26 09:19:40)
 
@@ -162,7 +154,6 @@ Related issues: [/issues#undefined](https://github.com//issues/undefined)
 * **App:** Updated packages | MP | [32dca0fc28e58925827959605786f745d78c163c](https://github.com/admiralcloud/ac-semantic-release/commit/32dca0fc28e58925827959605786f745d78c163c)    
 Updated packages  
 Related issues: [/issues#undefined](https://github.com//issues/undefined)
-<a name="0.3.1"></a>
 
 ## [0.3.1](https://github.com/admiralcloud/ac-semantic-release/compare/v0.3.0..v0.3.1) (2022-06-26 08:06:25)
 
@@ -185,8 +176,7 @@ Related issues: [undefined/undefined#master](undefined/browse/master)
 * **App:** Replace mmpro with AdmiralCloud | MP | [3ba2db35f4182facd8542508f64306831e994da2](https://github.com/admiralcloud/ac-semantic-release/commit/3ba2db35f4182facd8542508f64306831e994da2)    
 Replace mmpro with AdmiralCloud  
 Related issues: [undefined/undefined#master](undefined/browse/master)
-<a name="0.3.0"></a>
- 
+
 # [0.3.0](https://github.com/admiralcloud/ac-semantic-release/compare/v0.2.7..v0.3.0) (2022-04-03 06:19:53)
 
 
@@ -202,7 +192,6 @@ Quality of life improvement - gives default option for choosing link to Jira bas
 * **App:** Updated packages | MP | [22d06782afbb478598bb7f3c7474cd8ed8d896ea](https://github.com/admiralcloud/ac-semantic-release/commit/22d06782afbb478598bb7f3c7474cd8ed8d896ea)    
 Updated packages  
 Related issues: [undefined/undefined#master](undefined/browse/master)
-<a name="0.2.7"></a>
 
 ## [0.2.7](https://github.com/admiralcloud/ac-semantic-release/compare/v0.2.6..v0.2.7) (2021-10-09 10:28:05)
 
@@ -211,7 +200,6 @@ Related issues: [undefined/undefined#master](undefined/browse/master)
 
 * **App:** Package updates | MP | [95b7df07bd77a3f0f9adaa053a315a7218e403eb](https://github.com/admiralcloud/ac-semantic-release/commit/95b7df07bd77a3f0f9adaa053a315a7218e403eb)    
 Package updates
-<a name="0.2.6"></a>
 
 ## [0.2.6](https://github.com/mmpro/ac-semantic-release/compare/v0.2.5..v0.2.6) (2021-05-13 06:13:13)
 
@@ -220,7 +208,6 @@ Package updates
 
 * **App:** Package updates | MP | [a9de1a833bdeb328f0562e260ca89532d097257a](https://github.com/mmpro/ac-semantic-release/commit/a9de1a833bdeb328f0562e260ca89532d097257a)    
 Package updates
-<a name="0.2.5"></a>
 
 ## [0.2.5](https://github.com/mmpro/ac-semantic-release/compare/v0.2.4..v0.2.5) (2020-09-25 11:54:43)
 
@@ -229,7 +216,6 @@ Package updates
 
 * **App:** Fixed detecting title | MP | [305abbde51445355d699e9482888915a32c246ba](https://github.com/mmpro/ac-semantic-release/commit/305abbde51445355d699e9482888915a32c246ba)    
 Fixed detecting title of commit
-<a name="0.2.4"></a>
 
 ## [0.2.4](https://github.com/mmpro/ac-semantic-release/compare/v0.2.3..v0.2.4) (2020-09-23 16:16:18)
 
@@ -238,7 +224,6 @@ Fixed detecting title of commit
 
 * **App:** Fixed regex to determine title | MP | [428f19d378c00a85076b53ce531464413855840d](https://github.com/mmpro/ac-semantic-release/commit/428f19d378c00a85076b53ce531464413855840d)    
 Title can start with [JRA-123]
-<a name="0.2.3"></a>
 
 ## [0.2.3](https://github.com/mmpro/ac-semantic-release/compare/v0.2.2..v0.2.3) (2020-09-22 13:12:32)
 
@@ -251,7 +236,6 @@ In order to connect with JIRA, the title must start with the appropriate identif
 
 * **App:** Updated packages | MP | [14146a1ee644f16e6d16427bbd010d4ac9e4db45](https://github.com/mmpro/ac-semantic-release/commit/14146a1ee644f16e6d16427bbd010d4ac9e4db45)    
 Updated packages
-<a name="0.2.2"></a>
 
 ## [0.2.2](https://github.com/mmpro/ac-semantic-release/compare/v0.2.1..v0.2.2) (2020-07-19 07:25:10)
 
@@ -264,7 +248,6 @@ Put Jira issue ID at start of commit message
 
 * **App:** Updated packages | MP | [ae85d9f83197a0205b14df8a1a7e1067275c3efc](https://github.com/mmpro/ac-semantic-release/commit/ae85d9f83197a0205b14df8a1a7e1067275c3efc)    
 Updated packages
-<a name="0.2.1"></a>
 
 ## [0.2.1](https://github.com/mmpro/ac-semantic-release/compare/v0.2.0..v0.2.1) (2020-06-14 07:37:19)
 
@@ -276,8 +259,7 @@ Merge: 236c922 8ed531f
 Merge pull request #1 from mmpro/develop_md
 * **App:** regex include whitespace | MD | [8ed531f199c225e8bd5eb8663161d6ddc4b9f719](https://github.com/mmpro/ac-semantic-release/commit/8ed531f199c225e8bd5eb8663161d6ddc4b9f719)    
 allow any character in commit section title regex
-<a name="0.2.0"></a>
- 
+
 # [0.2.0](https://github.com/mmpro/ac-semantic-release/compare/v0.1.4..v0.2.0) (2020-06-14 07:36:47)
 
 
@@ -289,7 +271,6 @@ You can now link to Jira issues using square brackets (e.g. [JRA-123])
 
 * **App:** Updated packages | MP | [276767973d04d42b086e989a3a959d9e7b9ecac4](https://github.com/mmpro/ac-semantic-release/commit/276767973d04d42b086e989a3a959d9e7b9ecac4)    
 Updated packages
-<a name="0.1.4"></a>
 
 ## [0.1.4](https://github.com/mmpro/ac-semantic-release/compare/v0.1.3..v0.1.4) (2020-05-12 08:49:31)
 
@@ -298,7 +279,6 @@ Updated packages
 
 * **App:** Make sure to add section to questions | MP | [abce13380c939d324c709743f7e3f5affb4161ce](https://github.com/mmpro/ac-semantic-release/commit/abce13380c939d324c709743f7e3f5affb4161ce)    
 Make sure to add section to questions
-<a name="0.1.3"></a>
 
 ## [0.1.3](https://github.com/mmpro/ac-semantic-release/compare/v0.1.2..v0.1.3) (2020-05-12 08:45:51)
 
@@ -307,7 +287,6 @@ Make sure to add section to questions
 
 * **undefined:** New selection for package update | MP | [dc2b82ebcde9bbc8b28a3516745c628606024524](https://github.com/mmpro/ac-semantic-release/commit/dc2b82ebcde9bbc8b28a3516745c628606024524)    
 If you update packages, no need to write long messages, just select type package and choose the default message for title and description.
-<a name="0.1.2"></a>
 
 ## [0.1.2](https://github.com/mmpro/ac-semantic-release/compare/v0.1.1..v0.1.2) (2020-04-11 09:30:51)
 
@@ -316,7 +295,6 @@ If you update packages, no need to write long messages, just select type package
 
 * **App:** If no tags present, use version 0.0.0 | MP | [a4dee92afe36e5119bda5417c6abb05b0a4babf1](https://github.com/mmpro/ac-semantic-release/commit/a4dee92afe36e5119bda5417c6abb05b0a4babf1)    
 If no tags present, use version 0.0.0
-<a name="0.1.1"></a>
 
 ## [0.1.1](https://github.com/mmpro/ac-semantic-release/compare/v0.1.0..v0.1.1) (2020-03-29 12:51:49)
 
@@ -326,8 +304,7 @@ If no tags present, use version 0.0.0
 * **App:** Use git tag instead of git describe to get latest tag | MP | [bda1ff48504d62b3b08b3381c06de04a678525a5](https://github.com/mmpro/ac-semantic-release/commit/bda1ff48504d62b3b08b3381c06de04a678525a5)    
 Use git tag instead of git describe to get latest tag  
 Related issues: [mmpro/ac-semantic-release#1](https://github.com/mmpro/ac-semantic-release/issues/1) [mmpro/ac-api-server#340](https://github.com/mmpro/ac-api-server/issues/340)
-<a name="0.1.0"></a>
- 
+
 # [0.1.0](https://github.com/mmpro/ac-semantic-release/compare/..v0.1.0) (2020-03-28 21:56:31)
 
 
