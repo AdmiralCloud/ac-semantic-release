@@ -1,3 +1,28 @@
+
+## [0.4.4](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.3..v0.4.4) (2025-01-18 11:56:19)
+
+
+### Bug Fix
+
+* **App:** Remove undefined links | MP | [35057a91bcbb53787d146fef753b2ec95347d4a5](https://github.com/admiralcloud/ac-semantic-release/commit/35057a91bcbb53787d146fef753b2ec95347d4a5)    
+Remove undefined links  
+Related issues:
+* **App:** Fixed CHANGELOG writer | MP | [33444f8a23112e11a1ff78fb1c4e168029687a7b](https://github.com/admiralcloud/ac-semantic-release/commit/33444f8a23112e11a1ff78fb1c4e168029687a7b)    
+Try to avoid links with undefined  
+Related issues:
+### Tests
+
+* **App:** Added tests | MP | [08b547a99cdd84d9583968dbc97050b631df8a14](https://github.com/admiralcloud/ac-semantic-release/commit/08b547a99cdd84d9583968dbc97050b631df8a14)    
+Added tests  
+Related issues:
+### Chores
+
+* **App:** Updated packages | MP | [b0993adf9e4ed97df5cfff4b84b4e22f3a2b948d](https://github.com/admiralcloud/ac-semantic-release/commit/b0993adf9e4ed97df5cfff4b84b4e22f3a2b948d)    
+Updated packages  
+Related issues:
+* **App:** Updated packages | MP | [3a05009bb4160785ea5f0a9b68da89c2e7098e9a](https://github.com/admiralcloud/ac-semantic-release/commit/3a05009bb4160785ea5f0a9b68da89c2e7098e9a)    
+Updated packages  
+Related issues:
 <a name="0.4.3"></a>
 
 ## [0.4.3](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.2..v0.4.3) (2024-09-20 13:01:40)
