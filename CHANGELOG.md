@@ -1,4 +1,31 @@
 
+## [0.4.5](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.4..v0.4.5) (2025-01-18 12:25:33)
+
+
+### Bug Fix
+
+* **App:** Code quality improvement | MP | [ea054d51a96eeacfa5d9b056bc3e962ddc57e246](https://github.com/admiralcloud/ac-semantic-release/commit/ea054d51a96eeacfa5d9b056bc3e962ddc57e246)    
+Code quality improvement  
+Related issues:
+* **App:** Fixed release management | MP | [eaeab8a108171e512a7579df1926b66a50ea05a7](https://github.com/admiralcloud/ac-semantic-release/commit/eaeab8a108171e512a7579df1926b66a50ea05a7)    
+Fixed release management  
+Related issues:
+### Tests
+
+* **App:** Fixed tests | MP | [89e1f60518f007058f42b40bcef5181876c15878](https://github.com/admiralcloud/ac-semantic-release/commit/89e1f60518f007058f42b40bcef5181876c15878)    
+Fixed tests  
+Related issues:
+### Documentation
+
+* **App:** Added badge for automatic testing | MP | [3318045188623c941d16577cfb002b8643824854](https://github.com/admiralcloud/ac-semantic-release/commit/3318045188623c941d16577cfb002b8643824854)    
+Added badge for automatic testing  
+Related issues:
+### Chores
+
+* **App:** Add automated testing | MP | [3ca0f5e3112e3d55139de4236bd3b963765851ea](https://github.com/admiralcloud/ac-semantic-release/commit/3ca0f5e3112e3d55139de4236bd3b963765851ea)    
+Add automated testing  
+Related issues:
+
 ## [0.4.4](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.3..v0.4.4) (2025-01-18 11:56:19)
 
 
