@@ -1,4 +1,12 @@
 
+## [0.4.7](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.6..v0.4.7) (2025-08-07 14:30:30)
+
+
+### Bug Fix
+
+* **App:** Package updates | VD | [acef460e0efab6018f55d8e8870ca8bf1d69b2a8](https://github.com/admiralcloud/ac-semantic-release/commit/acef460e0efab6018f55d8e8870ca8bf1d69b2a8)    
+
+
 ## [0.4.6](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.5..v0.4.6) (2025-04-20 06:13:30)
 
 
