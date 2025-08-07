@@ -1,5 +1,3 @@
-const _ = require('lodash');
-const inquirer = require('inquirer');
 
 jest.mock('child_process', () => ({
   exec: jest.fn()
@@ -12,7 +10,7 @@ jest.mock('inquirer', () => ({
 describe('Commit functionality', () => {
   const mockRepositoryUrl = 'https://github.com/org/repo';
   const mockJiraUrl = 'https://jira.company.com';
-  
+
   afterEach(() => {
     jest.clearAllMocks();
   });
@@ -22,7 +20,7 @@ describe('Commit functionality', () => {
       const links = '#123';
       const mockTitle = 'feat(api): New feature | JD';
       const expectedBody = 'Related issues:\n        - ' + mockRepositoryUrl + '/issues/123\n';
-      const body = links.startsWith('#') ? 
+      const body = links.startsWith('#') ?
         'Related issues:\n        - ' + mockRepositoryUrl + '/issues/' + links.replace('#', '') + '\n' : '';
       expect(body).toBe(expectedBody);
     });
@@ -59,10 +57,12 @@ describe('Commit functionality', () => {
         const trimmedLink = link.trim();
         if (trimmedLink.startsWith('#')) {
           body += `        - ${mockRepositoryUrl}/issues/${trimmedLink.replace('#', '')}\n`;
-        } else if (trimmedLink.startsWith('[')) {
+        }
+        else if (trimmedLink.startsWith('[')) {
           const jiraId = trimmedLink.replace('[', '').replace(']', '');
           body += `        - ${mockJiraUrl}/browse/${jiraId}\n`;
-        } else {
+        }
+        else {
           const [repo, issue] = trimmedLink.split('#');
           body += `        - https://github.com/${repo}/issues/${issue}\n`;
         }
