@@ -6,18 +6,18 @@
   "main": "index.js",
   "author": "Mark Poepping (https://www.admiralcloud.com)",
   "contributors": [
-    "Virginijus Digrys (https://www.admiralcloud.com"
+    "Virginijus Digrys (https://www.admiralcloud.com)"
   ],
   "license": "MIT",
   "dependencies": {
     "async": "^3.2.6",
-    "chalk": "4.1.2",
-    "inquirer": "8.2.6",
+    "chalk": "5.5.0",
+    "inquirer": "^12.9.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "eslint": "^9.25.0",
-    "jest": "^29.7.0"
+    "eslint": "^9.32.0",
+    "jest": "^30.0.5"
   },
   "scripts": {
     "test": "jest"
