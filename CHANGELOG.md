@@ -1,4 +1,13 @@
 
+## [0.4.8](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.7..v0.4.8) (2025-09-19 05:05:17)
+
+
+### Bug Fix
+
+* **App:** Package updates | MP | [cbaae9b257d36fdf006975eb4c9247fb50d6d083](https://github.com/admiralcloud/ac-semantic-release/commit/cbaae9b257d36fdf006975eb4c9247fb50d6d083)    
+Package updates  
+Related issues: [browse/master#master](https://admiralcloud.atlassian.net/browse/master)
+
 ## [0.4.7](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.6..v0.4.7) (2025-08-07 14:30:30)
 
 
