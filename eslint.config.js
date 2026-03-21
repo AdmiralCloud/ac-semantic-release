@@ -1,35 +1,46 @@
 const globals = require('globals')
 const js = require('@eslint/js')
 
-module.exports = {
-  languageOptions: {
-    ecmaVersion: 2022,
-    sourceType: 'module',
-    globals: {
-      ...globals.commonjs,
-      ...globals.es6,
-      ...globals.node,
-      expect: 'readonly',
-      describe: 'readonly',
-      it: 'readonly',
-      test: 'readonly',
-      jest: 'readonly',
-      afterEach: 'readonly',
+module.exports = [
+  {
+    ignores: ['config/env/', 'config/env/**']
+  },
+  {
+    files: ['app/**/*.js', 'config/**/*.js', 'test/**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'commonjs',
+      globals: {
+        ...globals.es2022,
+        ...globals.node
+      }
+    },
+    rules: {
+      ...js.configs.recommended.rules,
+      // --- code quality ---
+      'no-console': ['warn', { allow: ['warn', 'error'] }],
+      'no-useless-escape': 'off',
+      'no-var': 'error',
+      'prefer-const': ['error', { ignoreReadBeforeAssign: true }],
+      'eqeqeq': 'error',
+      'curly': ['error', 'multi-line'],
+      // --- formatting ---
+      'space-before-function-paren': ['error', { anonymous: 'never', named: 'never', asyncArrow: 'never' }],
+      'no-extra-semi': 'off',
+      'object-curly-spacing': ['error', 'always'],
+      'brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
+      'block-spacing': 'error'
     }
   },
-  rules: {
-    ...js.configs.recommended.rules,
-    'no-undef': 'error',  // Add this rule to catch undefined variables
-    'no-const-assign': 'error',
-    'space-before-function-paren': 'off',
-    'no-extra-semi': 'off',
-    'object-curly-spacing': ['error', 'always'],
-    'brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
-    'no-useless-escape': 'off',
-    'new-cap': 'off',
-    //'no-console': ['warn', { allow: ['warn', 'error'] }],
-    'no-unused-vars': 'error',
-    'prefer-const': ['warn', { ignoreReadBeforeAssign: true }],
-    "no-control-regex": "off"
+  {
+    files: ['test/**/*.js'],
+    languageOptions: {
+      globals: {
+        ...globals.mocha,
+        expect: 'readonly',
+        assert: 'readonly',
+        should: 'readonly'
+      }
+    }
   }
-};
+]
