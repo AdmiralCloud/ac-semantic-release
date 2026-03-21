@@ -1,3 +1,14 @@
+ 
+# [1.0.0](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.11..v1.0.0) (2026-03-21 11:51:00)
+
+
+### Chores
+
+* **App:** Requires Node 20+ | MP | [b8539174f884cec9a1b9bddb33b187c7d744f776](https://github.com/admiralcloud/ac-semantic-release/commit/b8539174f884cec9a1b9bddb33b187c7d744f776)    
+Requires Node 20+  
+Related issues: [browse/master#master](https://admiralcloud.atlassian.net/browse/master)
+## BREAKING CHANGES
+* **App:** Requires Node 20+
 
 ## [0.4.11](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.10..v0.4.11) (2026-03-21 11:47:33)
 
