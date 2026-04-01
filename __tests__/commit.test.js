@@ -1,5 +1,5 @@
 
-const { describe, test, afterEach } = require('node:test')
+const { describe, test } = require('node:test')
 const assert = require('node:assert/strict')
 
 describe('Commit functionality', () => {
@@ -74,6 +74,25 @@ describe('Commit functionality', () => {
       assert.strictEqual(mockTitle, 'fix(core): Update error handling | JD');
     });
   });
+
+  describe('escapeDoubleQuotes', () => {
+    const escapeDoubleQuotes = (notes) => `${notes}`.replace(/\\/g, "\\\\").replace(/"/g, "\\\"")
+
+    test('escapes double quotes in commit title', () => {
+      const result = escapeDoubleQuotes('feat: say "hello"')
+      assert.strictEqual(result, 'feat: say \\"hello\\"')
+    })
+
+    test('escapes backslashes', () => {
+      const result = escapeDoubleQuotes('path\\to\\file')
+      assert.strictEqual(result, 'path\\\\to\\\\file')
+    })
+
+    test('leaves clean strings unchanged', () => {
+      const result = escapeDoubleQuotes('feat(api): Add endpoint')
+      assert.strictEqual(result, 'feat(api): Add endpoint')
+    })
+  })
 
   describe('Commit types', () => {
     const types = [

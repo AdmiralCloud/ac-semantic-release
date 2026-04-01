@@ -26,7 +26,7 @@ const config = {
     {
       type: 'list',
       name: 'type',
-      message: 'Select type of your comnit',
+      message: 'Select type of your commit',
       choices: () => {
         return config.types.map(item => ({ name: item.name, value: item.value }))
       }

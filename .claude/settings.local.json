@@ -4,7 +4,9 @@
       "Bash(cat /Users/markpoepping/Sites/ac-semantic-release/.github/workflows/*.yaml)",
       "Bash(yarn why:*)",
       "Bash(yarn install:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(gh pr:*)",
+      "Bash(gh api:*)"
     ]
   }
 }
