@@ -1,6 +1,7 @@
 
 const { describe, test } = require('node:test')
 const assert = require('node:assert/strict')
+const merge = require('lodash.merge')
 
 describe('Release functionality', () => {
   describe('BREAKING change detection in commit body parsing', () => {
@@ -53,24 +54,10 @@ describe('Release functionality', () => {
   })
 
   describe('deepMerge config', () => {
-    const UNSAFE_KEYS = new Set(['__proto__', 'constructor', 'prototype'])
-    const deepMerge = (target, source) => {
-      for (const key of Object.keys(source)) {
-        if (UNSAFE_KEYS.has(key)) continue
-        if (Object.prototype.toString.call(source[key]) === '[object Object]' &&
-            Object.prototype.toString.call(target[key]) === '[object Object]') {
-          deepMerge(target[key], source[key])
-        } else {
-          target[key] = source[key]
-        }
-      }
-      return target
-    }
-
     test('deep merges nested objects without overwriting sibling keys', () => {
       const base = { repository: { url: 'https://github.com/org/repo', type: 'git' } }
       const override = { repository: { url: 'https://github.com/org/other' } }
-      deepMerge(base, override)
+      merge(base, override)
       assert.strictEqual(base.repository.url, 'https://github.com/org/other')
       assert.strictEqual(base.repository.type, 'git')
     })
@@ -84,18 +71,19 @@ describe('Release functionality', () => {
       assert.strictEqual(base.repository.type, undefined)
     })
 
-    test('replaces arrays entirely (not merged element-by-element)', () => {
+    test('merges arrays element-by-element (lodash.merge behavior)', () => {
       const base = { types: [{ value: 'fix' }, { value: 'feat' }] }
       const override = { types: [{ value: 'custom' }] }
-      deepMerge(base, override)
-      assert.strictEqual(base.types.length, 1)
+      merge(base, override)
+      assert.strictEqual(base.types.length, 2)
       assert.strictEqual(base.types[0].value, 'custom')
+      assert.strictEqual(base.types[1].value, 'feat')
     })
 
     test('merges top-level scalar overrides', () => {
       const base = { padLength: 20, changelogFile: 'CHANGELOG.md' }
       const override = { padLength: 30 }
-      deepMerge(base, override)
+      merge(base, override)
       assert.strictEqual(base.padLength, 30)
       assert.strictEqual(base.changelogFile, 'CHANGELOG.md')
     })
