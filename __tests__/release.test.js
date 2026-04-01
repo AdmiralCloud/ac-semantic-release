@@ -53,8 +53,10 @@ describe('Release functionality', () => {
   })
 
   describe('deepMerge config', () => {
+    const UNSAFE_KEYS = new Set(['__proto__', 'constructor', 'prototype'])
     const deepMerge = (target, source) => {
       for (const key of Object.keys(source)) {
+        if (UNSAFE_KEYS.has(key)) continue
         if (source[key] && typeof source[key] === 'object' && !Array.isArray(source[key]) &&
             target[key] && typeof target[key] === 'object' && !Array.isArray(target[key])) {
           deepMerge(target[key], source[key])

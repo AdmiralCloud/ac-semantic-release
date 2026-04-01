@@ -6,7 +6,10 @@
       "Bash(yarn install:*)",
       "Bash(node:*)",
       "Bash(gh pr:*)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash('suggestion in c.get\\(body,\\)\\):*)",
+      "Bash(python3 -c ':*)",
+      "Bash(python3:*)"
     ]
   }
 }
