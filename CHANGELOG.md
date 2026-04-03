@@ -1,3 +1,46 @@
+## [1.0.1](https://github.com/admiralcloud/ac-semantic-release/compare/v1.0.0..v1.0.1) (2026-04-03 07:42:15)
+
+
+### Bug Fix
+
+
+* **App:** Use lodash merge instead of own function | MP | [dbe3b84e5a626742775ca4630aa09fc7b62c5ebd](https://github.com/admiralcloud/ac-semantic-release/commit/dbe3b84e5a626742775ca4630aa09fc7b62c5ebd)    
+Use lodash merge to avoid prototype pollution
+* **App:** Additional fixes | MP | [a0f24c24d31427613639d6c60fb1011705ae052e](https://github.com/admiralcloud/ac-semantic-release/commit/a0f24c24d31427613639d6c60fb1011705ae052e)    
+Additional fixes  
+Related issues: [browse/20260401_packages#20260401_packages](https://admiralcloud.atlassian.net/browse/20260401_packages)
+* **App:** Additonal fixes | MP | [3428110147fb730a290c4e7fa3be6030091f9908](https://github.com/admiralcloud/ac-semantic-release/commit/3428110147fb730a290c4e7fa3be6030091f9908)    
+Additional fixes  
+Related issues: [browse/20260401_packages#20260401_packages](https://admiralcloud.atlassian.net/browse/20260401_packages)
+* **App:** Additional fixes after CoPilot review | MP | [ecf660083e82cbb369deda632085a2acf5801be4](https://github.com/admiralcloud/ac-semantic-release/commit/ecf660083e82cbb369deda632085a2acf5801be4)    
+Additional fixes after CoPilot review  
+Related issues: [browse/20260401_packages#20260401_packages](https://admiralcloud.atlassian.net/browse/20260401_packages)
+* **App:** Fixes after CoPilot review | MP | [d0ae107e2f74e3c319b278eabb80664a58c49feb](https://github.com/admiralcloud/ac-semantic-release/commit/d0ae107e2f74e3c319b278eabb80664a58c49feb)    
+Fixes after CoPilot review  
+Related issues: [browse/20260401_packages#20260401_packages](https://admiralcloud.atlassian.net/browse/20260401_packages)
+* **App:** Package updates are commited as fix | MP | [69005ee615e96e011f0ea41afd812a7cba3c4ef0](https://github.com/admiralcloud/ac-semantic-release/commit/69005ee615e96e011f0ea41afd812a7cba3c4ef0)    
+Package updates are commited as fix. Additionally, you can now add deleted files without error  
+Related issues: [browse/20260401_packages#20260401_packages](https://admiralcloud.atlassian.net/browse/20260401_packages)
+* **App:** Replaced packages | MP | [dc23230e707d88090e96b1b603037357e4487a89](https://github.com/admiralcloud/ac-semantic-release/commit/dc23230e707d88090e96b1b603037357e4487a89)    
+Replaced packages and updated code
+### Chores
+
+
+* **App:** Update Workflows | MP | [7b38217c0975916434cc015e6d1ee5adc1b457f7](https://github.com/admiralcloud/ac-semantic-release/commit/7b38217c0975916434cc015e6d1ee5adc1b457f7)    
+Update Workflows  
+Related issues: [browse/20260401_packages#20260401_packages](https://admiralcloud.atlassian.net/browse/20260401_packages)
+* **Misc:** Bring back Github workflow | MP | [6686147c2485ddac17b85a2a4cfb26af5e82a251](https://github.com/admiralcloud/ac-semantic-release/commit/6686147c2485ddac17b85a2a4cfb26af5e82a251)    
+Bring back Github workflow  
+Related issues: [browse/20260401_packages#20260401_packages](https://admiralcloud.atlassian.net/browse/20260401_packages)
+* **App:** Add permission and only use Node version 22+ | MP | [cdde572b46243997d2053cfa00618483cd51d792](https://github.com/admiralcloud/ac-semantic-release/commit/cdde572b46243997d2053cfa00618483cd51d792)    
+Add read-only permissions to Github workflow. Also only use Node 22+ for workflow testing  
+Related issues: [browse/master#master](https://admiralcloud.atlassian.net/browse/master)
+### Chores
+
+
+* **App:** Updated packages | MP | [29a2e59c606f8d4d7650ecf7cd043535ae0675cd](https://github.com/admiralcloud/ac-semantic-release/commit/29a2e59c606f8d4d7650ecf7cd043535ae0675cd)    
+Updated packages  
+Related issues: [browse/20260401_packages#20260401_packages](https://admiralcloud.atlassian.net/browse/20260401_packages)
  
 # [1.0.0](https://github.com/admiralcloud/ac-semantic-release/compare/v0.4.11..v1.0.0) (2026-03-21 11:51:00)
 
