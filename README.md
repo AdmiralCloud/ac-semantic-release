@@ -1,7 +1,7 @@
 # AC Semantic Release
 AdmiralCloud Semantic Release Manager makes sure your commits and release follow semantic versioning guidelines.
 
-[![Node.js CI](https://github.com/AdmiralCloud/ac-semantic-release/actions/workflows/node.js.yml/badge.svg)](https://github.com/AdmiralCloud/ac-semantic-release/actions/workflows/node.js.yml)
+[![Node.js CI](https://github.com/AdmiralCloud/ac-semantic-release/actions/workflows/node.js.yml/badge.svg)](https://github.com/AdmiralCloud/ac-semantic-release/actions/workflows/node.js.yml) [![CodeQL](https://github.com/AdmiralCloud/ac-semantic-release/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/AdmiralCloud/ac-semantic-release/actions/workflows/github-code-scanning/codeql)
 
 ## BREAKING CHANGE version 2
 Version 2 requires Node 22+.
