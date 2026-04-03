@@ -1,23 +1,15 @@
-const _ = require('lodash')
-
 const util = require('util');
 const exec = util.promisify(require('child_process').exec);
 
 
 const config = {
   selectedType: undefined,
-  templates: {
-    templateEntry: __dirname + '/templates/templateEntry.ejs',
-    templateSection: __dirname + '/templates/templateSection.ejs',
-    templateCommit: __dirname + '/templates/templateCommit.ejs',
-    templateBreaking: __dirname + '/templates/templateBreaking.ejs'
-  },
   changelogFile: 'path-to-changelog',
   types: [
     { value: 'fix',      name: 'fix:      A bug fix', changelog: 'Bug Fix', order: 10 },
     { value: 'feat',     name: 'feat:     A new feature', changelog: 'Feature', order: 1 },
     { value: 'chore',    name: 'chore:    Changes to the build process or auxiliary tools\n            and libraries such as documentation generation', changelog: 'Chores', order: 92 },
-    { value: 'package',  name: 'package:  Package update', changelog: 'Chores', order: 92 },
+    { value: 'package',  name: 'package:  Package update', changelog: 'Chores', order: 92, releaseAs: 'fix' },
     { value: 'test',     name: 'test:     Adding missing tests', changelog: 'Tests', order: 80 },
     { value: 'docs',     name: 'docs:     Documentation only changes', changelog: 'Documentation', order: 90 },
     { value: 'style',    name: 'style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)', changelog: 'Style', order: 91 },
@@ -34,14 +26,9 @@ const config = {
     {
       type: 'list',
       name: 'type',
-      message: 'Select type of your comnit',
+      message: 'Select type of your commit',
       choices: () => {
-        return _.map(config.types, (item) => {
-          return {
-            name: _.get(item, 'name'),
-            value: _.get(item, 'value')
-          }
-        })
+        return config.types.map(item => ({ name: item.name, value: item.value }))
       }
     },
     {
@@ -49,12 +36,7 @@ const config = {
       name: 'section',
       message: 'Select section',
       choices: () => {
-        return _.map(config.sections, (item) => {
-          return {
-            name: _.get(item, 'name'),
-            value: _.get(item, 'name')
-          }
-        })
+        return config.sections.map(item => ({ name: item.name, value: item.name }))
       },
       when: (val) => {
         config.selectedType = val.type
@@ -95,7 +77,7 @@ const config = {
         if (process.env.NODE_ENV === 'test') return '#1, admiralcloud/ac-api-server#340'
         try {
           const { stdout } = await exec('git rev-parse --abbrev-ref HEAD')
-          return `[${_.trim(stdout)}]`
+          return `[${stdout.trim()}]`
         }
         catch {
           // eat error
@@ -117,8 +99,8 @@ const config = {
       },
       default: async() => {
         const { stdout } = await exec('git config user.name')
-        const parts = _.split(stdout, ' ')
-        const initials = _.first(parts).substring(0, 1) + _.last(parts).substring(0, 1)
+        const parts = stdout.trim().split(' ')
+        const initials = parts[0].substring(0, 1) + parts[parts.length - 1].substring(0, 1)
         return initials
       }
     }
