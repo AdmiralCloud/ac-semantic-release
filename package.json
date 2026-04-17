@@ -4,7 +4,7 @@
     "type": "git",
     "url": "git+https://github.com/admiralcloud/ac-semantic-release.git"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lightweight semantic release management",
   "main": "index.js",
   "author": "Mark Poepping (https://www.admiralcloud.com)",

@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/admiralcloud/ac-semantic-release/compare/v1.0.1..v1.0.2) (2026-04-17 07:47:55)
+
+
+### Bug Fix
+
+
+* **App:** Package updates | MP | [f7a956288e82b50a9ea01d549673dfc08b276e96](https://github.com/admiralcloud/ac-semantic-release/commit/f7a956288e82b50a9ea01d549673dfc08b276e96)    
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>
 ## [1.0.1](https://github.com/admiralcloud/ac-semantic-release/compare/v1.0.0..v1.0.1) (2026-04-03 07:42:15)
 
 
