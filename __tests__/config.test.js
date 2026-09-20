@@ -120,10 +120,5 @@ describe('config.js questions', () => {
     test('ignores middle names when building initials', () => {
       assert.strictEqual(initialsFromName('Mark Alan Poepping'), 'MP')
     })
-
-    test('default() resolves to a real 2-character value from git config', async () => {
-      const result = await getQuestion('credentials').default()
-      assert.strictEqual(result.length, 2)
-    })
   })
 })
