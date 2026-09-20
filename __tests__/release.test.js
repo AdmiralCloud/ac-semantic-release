@@ -113,6 +113,34 @@ describe('Release functionality', () => {
     })
   })
 
+  describe('releaseAs mapping determines release type', () => {
+    // Mirrors the determination logic in lib/release.js (Step 3)
+    const config = require('../config')
+
+    const determineReleaseType = (groupedCommits, breaking) => {
+      if (breaking) return 'Minor' // only for font size, see release.js
+      if (groupedCommits.feat) return 'Minor'
+      if (groupedCommits.fix || config.types.some(t => t.releaseAs === 'fix' && groupedCommits[t.value])) return 'Patch'
+      return undefined
+    }
+
+    test('package commit alone triggers a Patch release via releaseAs', () => {
+      const groupedCommits = { package: [{ type: 'package', title: 'Updated packages' }] }
+      assert.strictEqual(determineReleaseType(groupedCommits, false), 'Patch')
+    })
+
+    test('config.js still declares package with releaseAs "fix"', () => {
+      const packageType = config.types.find(t => t.value === 'package')
+      assert.ok(packageType, 'package type must exist in config.types')
+      assert.strictEqual(packageType.releaseAs, 'fix')
+    })
+
+    test('a type without releaseAs does not trigger a release on its own', () => {
+      const groupedCommits = { chore: [{ type: 'chore', title: 'Tidy up' }] }
+      assert.strictEqual(determineReleaseType(groupedCommits, false), undefined)
+    })
+  })
+
   describe('git add staging command', () => {
     test('staging command uses -A -- flag to handle deletions', () => {
       const files = ['src/foo.js', 'src/bar.js']
