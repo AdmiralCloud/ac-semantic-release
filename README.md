@@ -58,6 +58,39 @@ export DEBUGMODE=true
 ***PRO TIP No 2***
 In case commit messags turn out to be incorrect, you might want to use a fixed version (instead of auto semantic versioning). Now this module supports that function by exporting a fixed version, e.g. export FIXEDVERSION=1.0.0.
 
+## Dependabot audit
+Checks the open Dependabot alerts of your repository (GitHub reports them for the default branch) against the lockfile of your current checkout. Run it before opening a PR to see whether your branch actually fixes them.
+
+```
+Example Makefile
+
+audit:
+	@node ./node_modules/ac-semantic-release/lib/audit.js
+```
+
++ supports yarn.lock (v1 and berry), package-lock.json and npm-shrinkwrap.json
++ in monorepos each alert is checked against the lockfile next to its manifest
++ the GitHub token is taken from GITHUB_TOKEN, GH_TOKEN or `gh auth token` - it needs read access to Dependabot alerts
++ exit code 0 = ok, 1 = vulnerable packages at or above the threshold, 2 = error (no token, no access)
+
+Options: `--fail-on low|medium|high|critical` (or env AUDIT_FAIL_ON), `--ignore GHSA-...,CVE-...,package`, `--lockfile path`, `--repo owner/name`, `--json`
+
+Defaults can be set in the `audit` block of your .acsemver.js (see Customizing below). You only need the keys you want to change. With `beforeRelease: true`, "make release" runs the audit first and aborts if it fails (DEBUGMODE only reports).
+```
+audit: {
+  failOn: 'high', // only high and critical fail, low and medium are still listed
+  ignore: [{ id: 'GHSA-xxxx-xxxx-xxxx', reason: 'dev only, not reachable' }], // GHSA id, CVE id or package name
+  beforeRelease: true
+}
+```
+
+Command line options and env variables override .acsemver.js for a single run. `--ignore` adds to the ignore list from .acsemver.js instead of replacing it.
+```
+node ./node_modules/ac-semantic-release/lib/audit.js --fail-on critical
+AUDIT_FAIL_ON=critical make audit
+node ./node_modules/ac-semantic-release/lib/audit.js --ignore GHSA-aaaa-bbbb-cccc,lodash
+```
+
 ## Customizing
 It is highly recommended that you create a configuration file in your actual repository. Please name it ".acsemver.js" and make sure it is also part of your source control (in other words: commit it!)
 
@@ -70,9 +103,9 @@ module.exports = {
   },
   jira: {
     url: 'https://MY-INSTANCE.atlassian.net' // This is optional
-  }
+  },
   changelogFile: __dirname + '/CHANGELOG.md',
-  scopes: [
+  sections: [
     {name: 'Misc' },
     ... // optional more
   ]
@@ -80,6 +113,12 @@ module.exports = {
 ```
 
 Please take a look at the config file in this repo to see all config options. You can change types, templates (EJS), section and questions (during commit).
+
+### How the configuration is merged
+Do not edit config.js in node_modules. The commit, release and audit commands load `.acsemver.js` from the directory they are started in and deep merge it (lodash.merge) over the defaults from config.js. Keys you leave out keep their default values.
+
++ run the commands from your repository root - the Makefile targets above do that
++ arrays are merged by position, not replaced: if a default array has two entries and you set only one, the second default entry stays
 
 ## Thanks
 We have been using semantic-release package for a long time but created our own release management because we needed more control over dependencies and did not need all the functionalities. Still, this package is highly inspired by the great work of the semantic-release team.

@@ -22,6 +22,12 @@ const config = {
     { name: 'App' },
     { name: 'Misc' },
   ],
+  // Dependabot audit (lib/audit.js)
+  audit: {
+    failOn: 'low', // lowest severity that fails: low, medium, high, critical
+    ignore: [], // GHSA ids, CVE ids or package names, e.g. ['GHSA-xxxx-xxxx-xxxx'] or [{ id: 'GHSA-...', reason: 'not reachable' }]
+    beforeRelease: false // run the audit in "make release" and abort if it fails
+  },
   questions: [
     {
       type: 'list',
