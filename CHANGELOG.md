@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/admiralcloud/ac-semantic-release/compare/v1.0.4..v1.0.5) (2026-09-25 10:07:39)
+
+
+### Bug Fix
+
+
+* **App:** add audit option | VD | [f1bae19dad33e956d6d0d1717b983a9b25a247e0](https://github.com/admiralcloud/ac-semantic-release/commit/f1bae19dad33e956d6d0d1717b983a9b25a247e0)    
+add audit option  
+Related issues: [browse/AC-9268#AC-9268](https://admiralcloud.atlassian.net/browse/AC-9268)
 ## [1.0.4](https://github.com/admiralcloud/ac-semantic-release/compare/v1.0.3..v1.0.4) (2026-09-20 13:42:47)
 
 
