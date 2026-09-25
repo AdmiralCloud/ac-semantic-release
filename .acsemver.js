@@ -6,7 +6,7 @@ module.exports = {
     url: 'https://admiralcloud.atlassian.net'
   },
   changelogFile: __dirname + '/CHANGELOG.md',
-  scopes: [
+  sections: [
     { name: 'App' },
   ]
 }

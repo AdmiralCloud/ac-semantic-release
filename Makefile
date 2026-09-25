@@ -7,6 +7,9 @@ release:
 test-release:
 	DEBUGMODE=true node ./lib/release.js
 
+audit:
+	node ./lib/audit.js
+
 lint-check:
 	./node_modules/.bin/eslint *.js lib/*.js
 
